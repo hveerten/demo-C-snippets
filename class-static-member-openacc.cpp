@@ -37,7 +37,7 @@ class c_test
 // variables must be defined in order to become a 'complete type'. 
 long* c_test::dataset = NULL;
 #pragma acc declare create(c_test::dataset)
-int c_test::res = 0;
+int c_test::res;
 #pragma acc declare create(c_test::res)
 
 // functions, too, must be defined in addition to being declared, but this
